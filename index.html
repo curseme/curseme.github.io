@@ -1,0 +1,190 @@
+<html>
+<head>
+	<meta name = "viewport" content = "width=device-width,initial-scale=1.0">
+	<style type="text/css">
+		body{
+			background-color: black;
+			transition:background-color 0.5s;
+			}
+		#text{
+			position:relative;
+			top:40%;
+			font-family: Arial;
+			display:block;
+			text-align: center;
+			color:white;
+			padding:50px;
+			margin-left:20%;
+			margin-right:20%;
+			background-color: black;
+			-webkit-user-select:none;
+			border-right:solid white 30px;
+			border-left:solid white 10px;
+			cursor:pointer;
+			font-size: 20px;
+			box-shadow: 10px 10px 50px black;
+			transition: border 0.2s;
+			}
+			#text:hover{
+				border-left: solid white 30px;
+				border-right:solid white 10px;
+			}
+		.audio{
+			display:none;
+		}
+	</style>
+
+	<script>
+		var iter = 0;
+		var iter2 = 0;
+		var iter3 = 0;
+		var no = setInterval(func,1000);
+		var c = setInterval(blob,5000);
+
+		function blob(){
+			var n = document.getElementById("text");
+			var z = rand2();
+			var nest = z;
+			var sou = nest.toString(10);
+			var s1 = document.getElementById(z+1);
+			s1.play();
+			n.innerHTML = json1.texts[z] + " ";
+		}
+		function func(){
+			var s = random();
+			var p = random();
+			if(s<=9)
+				s = '0'+s;
+			var str = '#'  + s;
+            var str2 = '#' + p;
+
+			var n = document.getElementById("text");
+			n.style.backgroundColor = str;
+			document.body.style.backgroundColor = str2;
+		}
+		function random(){
+			var rand = Math.round((Math.random()*1000000));
+			if(rand<100000)
+				rand = random();
+			
+			return rand;
+		}
+		function rand2(){
+			var x = Math.round(Math.random()*21);
+			if(x>20)
+				x = rand2();
+			return x;
+		}
+
+		function hoho(){
+			var n = document.getElementById("text");
+			n.innerHTML = "ha, padh le bhosdike";
+			var sound = document.getElementById("audio");
+			sound.play();
+
+		}
+
+		var json1;
+		json1 = {
+		/*1*/	"texts":["what the fuck,bro, get a life", 
+		/*2*/	"Dude, dont waste your time on ChildPorn",
+		/*3*/	"you have exams soon, and you haven't studied SHIT yet",
+		/*4*/	"ARe yoU FuCkING serioUs?",
+		/*5*/	"Yo gay, bruh",
+		/*6*/	"lazy. You lazy ass",
+		/*7*/	"Why don't you eat Shit? ",
+		/*8*/	"You Single, Right. Just like the digit marks you score!",
+		/*9*/	"Aight Imma Headout! You were a mistake, yours lovingly, Dad",
+		/*10*/	"Apparently, You are just a burden on Earth",
+		/*11*/	"You wanna see a Loser? Look into a mirror",
+		/*12*/	"What a Pussy, you are",
+		/*13*/	"If you like to sleep at Daylight,go get fucked",
+		/*14*/	"मादरचोद",
+		/*15*/	"जिन्दा क्यों हो तुम",
+		/*16*/	"You are like the corners of a pizza, worthless and full of shit ",
+		/*17*/	"गांडू",
+		/*18*/	"चूतिये का बच्चा",
+		/*19*/	"Even a crow is fairer than your dark dead heart",
+		/*20*/ 	"जय हिन्द, दोस्तों",
+		/*21*/	"नपुंसक"
+
+			]
+		}
+	</script>
+	</head>
+<body>
+	<p id  = "text" onclick = "hoho()">
+		Hah, You're gonna Get Fucked Now!
+		</p>
+
+	<div class = "audio">
+		<audio id = "1">
+			<source src="audio/1.mp3" type="audio/mp3">
+		</audio>
+		<audio id = "2">
+			<source src="audio/2.mp3" type="audio/mp3">
+		</audio>
+		<audio id = "3">
+			<source src="audio/3.mp3" type="audio/mp3">
+		</audio>
+		<audio id = "4">
+			<source src="audio/4.mp3" type="audio/mp3">
+		</audio>
+		<audio id = "5">
+			<source src="audio/5.mp3" type="audio/mp3">
+		</audio>
+		<audio id = "6">
+			<source src="audio/6.mp3" type="audio/mp3">
+		</audio>
+		<audio id = "7">
+			<source src="audio/7.mp3" type="audio/mp3">
+		</audio>
+		<audio id = "8">
+			<source src="audio/8.mp3" type="audio/mp3">
+		</audio>
+		<audio id = "9">
+			<source src="audio/9.mp3" type="audio/mp3">
+		</audio>
+		<audio id = "10">
+			<source src="audio/10.mp3" type="audio/mp3">
+		</audio>
+		<audio id = "11">
+			<source src="audio/11.mp3" type="audio/mp3">
+		</audio>
+		<audio id = "12">
+			<source src="audio/12.mp3" type="audio/mp3">
+		</audio>
+		<audio id = "13">
+			<source src="audio/13.mp3" type="audio/mp3">
+		</audio>
+		<audio id = "14">
+			<source src="audio/14.mp3" type="audio/mp3">
+		</audio>
+		<audio id = "15">
+			<source src="audio/15.mp3" type="audio/mp3">
+		</audio>
+		<audio id = "16">
+			<source src="audio/16.mp3" type="audio/mp3">
+		</audio>
+		<audio id = "17">
+			<source src="audio/17.mp3" type="audio/mp3">
+		</audio>
+		<audio id = "18">
+			<source src="audio/18.mp3" type="audio/mp3">
+		</audio>
+		<audio id = "19">
+			<source src="audio/19.mp3" type="audio/mp3">
+		</audio>
+		<audio id = "20">
+			<source src="audio/20.mp3" type="audio/mp3">
+		</audio>
+		<audio id = "21">
+			<source src="audio/21.mp3" type="audio/mp3">
+		</audio>
+		<audio id = "audio">
+			<source src="audio/aud.mp3" type="audio/mp3">
+		</audio>
+		</div>
+
+	</body>
+</html>
