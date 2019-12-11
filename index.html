@@ -46,6 +46,11 @@ c̸̛̑̉̉̽͛̑̑̏͌̾̇̍̏̂͐̑́̊̾̎̀͂̀́̓͒̇̋̄̈̅̚̕͘͝͠͝�
 		var no = setInterval(func,5000);
 		var c = setInterval(blob,5000);
 
+		function Russia(){
+		var rus = document.getElementById("russia");
+		rus.play();
+		rus.volume =1.0;
+		}
 		function blob(){
 			var n = document.getElementById("text");
 			var z = rand2();
@@ -118,7 +123,7 @@ c̸̛̑̉̉̽͛̑̑̏͌̾̇̍̏̂͐̑́̊̾̎̀͂̀́̓͒̇̋̄̈̅̚̕͘͝͠͝�
 	</script>
 	</head>
 <body>
-	<p id  = "text" onclick = "hoho()">
+	<p id  = "text" onclick = "hoho()" ondblclick="Russia()">
 		Hah, You're gonna Get Fucked Now!
 		</p>
 
@@ -190,6 +195,8 @@ c̸̛̑̉̉̽͛̑̑̏͌̾̇̍̏̂͐̑́̊̾̎̀͂̀́̓͒̇̋̄̈̅̚̕͘͝͠͝�
 			<source src="audio/aud.mp3" type="audio/mp3">
 		</audio>
 		</div>
-
+		<audio id = "russia" loop>
+			<source src="audio/russia.mp3" type="audio/mp3">
+		</audio>
 	</body>
 </html>
